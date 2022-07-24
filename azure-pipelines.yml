@@ -34,7 +34,7 @@ stages:
   jobs:
     - job: Provision
       displayName: 'Provisioning container instance'
-      pool: adomey
+      pool: adomey0
       variables:
       - group: TerraFormSP
       steps:
