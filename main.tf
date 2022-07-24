@@ -9,6 +9,7 @@ terraform{
         storage_account_name = "stroageaccountsam"
         container_name = "stersstorage"
         key = "terraform.tfstate"
+        use_azuread_auth = true
     
     }
 }
