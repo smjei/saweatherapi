@@ -1,10 +1,19 @@
 provider "azurerm" {
     version = "3.15.0"
-    features {
-      
-    }
-  
+    features {}
 }
+
+terraform{
+    backend "azurerm" {
+        resource_group_name = "stStorage"
+        storage_account_name = "stroageaccountsam"
+        container_name = "stersstorage"
+        key = "terraform.tfstate"
+    
+    }
+}
+  
+
 
 resource "azurerm_resource_group" "tf_test" {
 
