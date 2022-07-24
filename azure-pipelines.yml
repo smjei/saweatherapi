@@ -17,7 +17,7 @@ stages:
   jobs:
   - job: Build
     displayName: Build
-    pool: MyPrivatePool
+    pool: adomey0
     steps:
     - task: Docker@2
       inputs:
